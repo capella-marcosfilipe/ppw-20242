@@ -3,26 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade PPW</title>
+    <title>Whatsapp</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1 class="title">Mande uma mensagem no Whatsapp</h1>
     <form id="userForm">
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name" />
-
       <label for="address">Endereço:</label>
       <input type="text" id="address" name="address" />
-
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" />
-
       <label for="phone">Telefone:</label>
       <input type="tel" id="phone" name="phone" />
 
-      <button type="button" onclick="saveData()">Gravar</button><br /><br />
+      <button type="submit" onclick="sendMessage()">Enviar</button><br /><br />
     </form>
-    <button type="button" onclick="getData()">Exibir</button>
-    <div id="userData"></div>
   </body>
 </html>
